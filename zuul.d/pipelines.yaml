@@ -36,7 +36,6 @@
           scheme: 'zuul-check'
           state: SUCCESSFUL
           message: 'Change passed all voting jobs'
-      mysql:
     failure:
       gerrit:
         comment: False
@@ -44,4 +43,3 @@
           scheme: 'zuul-check'
           state: FAILED
           message: 'Change failed'
-      mysql:

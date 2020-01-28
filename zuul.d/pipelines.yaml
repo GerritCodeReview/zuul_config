@@ -1,0 +1,47 @@
+- pipeline:
+    name: check
+    description: |
+      Newly uploaded patchsets enter this pipeline to receive an
+      initial verification.
+    manager: independent
+    trigger:
+      gerrit:
+        - event: pending-check
+          scheme: 'zuul-check'
+    enqueue:
+      googlesource:
+        comment: False
+        checks-api:
+          scheme: 'zuul-check'
+          state: SCHEDULED
+          message: 'Change has been enqueued in check'
+    start:
+      googlesource:
+        comment: False
+        checks-api:
+          scheme: 'zuul-check'
+          state: RUNNING
+          message: 'Jobs have started running'
+    no-jobs:
+      googlesource:
+        comment: False
+        checks-api:
+          scheme: 'zuul-check'
+          state: NOT_RELEVANT
+          message: 'Project has no jobs configured'
+    success:
+      googlesource:
+        comment: False
+        checks-api:
+          scheme: 'zuul-check'
+          state: SUCCESSFUL
+          message: 'Change passed all voting jobs'
+      mysql:
+    failure:
+      googlesource:
+        comment: False
+        checks-api:
+          scheme: 'zuul-check'
+          state: FAILED
+          message: 'Change failed'
+      mysql:

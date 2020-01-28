@@ -9,28 +9,28 @@
         - event: pending-check
           scheme: 'zuul-check'
     enqueue:
-      googlesource:
+      gerrit:
         comment: False
         checks-api:
           scheme: 'zuul-check'
           state: SCHEDULED
           message: 'Change has been enqueued in check'
     start:
-      googlesource:
+      gerrit:
         comment: False
         checks-api:
           scheme: 'zuul-check'
           state: RUNNING
           message: 'Jobs have started running'
     no-jobs:
-      googlesource:
+      gerrit:
         comment: False
         checks-api:
           scheme: 'zuul-check'
           state: NOT_RELEVANT
           message: 'Project has no jobs configured'
     success:
-      googlesource:
+      gerrit:
         comment: False
         checks-api:
           scheme: 'zuul-check'
@@ -38,7 +38,7 @@
           message: 'Change passed all voting jobs'
       mysql:
     failure:
-      googlesource:
+      gerrit:
         comment: False
         checks-api:
           scheme: 'zuul-check'

@@ -30,6 +30,7 @@
           state: NOT_RELEVANT
           message: 'Project has no jobs configured'
     success:
+      sql:
       gerrit:
         comment: False
         checks-api:
@@ -37,6 +38,7 @@
           state: SUCCESSFUL
           message: 'Change passed all voting jobs'
     failure:
+      sql:
       gerrit:
         comment: False
         checks-api:

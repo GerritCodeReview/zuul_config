@@ -1,0 +1,11 @@
+- hosts: localhost
+  roles:
+    - emit-job-header
+    - log-inventory
+    - add-build-sshkey
+    - start-zuul-console
+    - ensure-output-dirs
+
+- hosts: all
+  roles:
+    - prepare-workspace-git

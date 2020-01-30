@@ -1,0 +1,6 @@
+- nodeset:
+    name: debian-testing
+    nodes:
+      - name: debian-testing
+        label: testlabel
+# TODO: use a real label

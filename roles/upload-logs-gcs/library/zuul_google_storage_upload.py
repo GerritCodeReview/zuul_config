@@ -627,8 +627,12 @@ class Uploader():
         self.prefix = prefix or ''
 
         self.bucket = client.bucket(container)
-        cors = [{'origin': ['*']}]
+        cors = [
+            {'method': ['GET', 'HEAD']},
+            {'origin': ['*']}
+        ]
         self.bucket.cors = cors
+        self.bucket.website = {"mainPageSuffix": "index.html"}
         self.bucket.update()
 
         self.url = os.path.join('https://storage.googleapis.com/',

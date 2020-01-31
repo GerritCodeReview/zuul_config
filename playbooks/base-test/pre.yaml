@@ -2,10 +2,10 @@
   roles:
     - emit-job-header
     - log-inventory
-    - add-build-sshkey
-    - start-zuul-console
-    - ensure-output-dirs
 
 - hosts: all
   roles:
+    - add-build-sshkey
+    - start-zuul-console
+    - ensure-output-dirs
     - prepare-workspace-git

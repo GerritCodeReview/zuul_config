@@ -2,5 +2,5 @@
   roles:
     - generate-zuul-manifest
     - role: upload-logs-gcs
-      zuul_log_container: gerrit_zuul_logs
+      zuul_log_container: gerrit_zuul_logs2
       zuul_log_credentials_file: /authdaemon/token

@@ -4,6 +4,15 @@
     - log-inventory
 
 - hosts: all
+  tasks:
+    - name: Install packages
+      package:
+        name:
+          - git
+          - rsync
+        state: present
+
+- hosts: all
   roles:
     - add-build-sshkey
     - start-zuul-console

@@ -1,6 +1,7 @@
 - hosts: localhost
   roles:
-    - generate-zuul-manifest
+    - role: generate-zuul-manifest
+      generate_zuul_manifest_index_links: True
     - role: upload-logs-gcs
       zuul_log_container: gerrit_zuul_logs2
       zuul_log_credentials_file: /authdaemon/token

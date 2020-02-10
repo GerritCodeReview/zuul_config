@@ -4,6 +4,7 @@
       Newly uploaded patchsets enter this pipeline to receive an
       initial verification.
     manager: independent
+    precedence: low
     trigger:
       gerrit:
         - event: pending-check
@@ -45,3 +46,21 @@
           scheme: 'zuul-check'
           state: FAILED
           message: 'Change failed'
+
+- pipeline:
+    name: post
+    description: |
+      This pipeline runs jobs that operate after a branch is updated.
+      Queue items are identified by the abbreviated hash (git log
+      --format=%h) of the merge commit.
+    manager: supercedent
+    precedence: high
+    post-review: True
+    trigger:
+      gerrit:
+        - event: ref-updated
+          ref: ^refs/heads/.*$
+    success:
+      sql:
+    failure:
+      sql:

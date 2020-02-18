@@ -1,6 +1,5 @@
 - nodeset:
-    name: debian-testing
+    name: debian-stretch
     nodes:
-      - name: debian-testing
-        label: testlabel
-# TODO: use a real label
+      - name: testnode
+        label: debian-stretch-8G

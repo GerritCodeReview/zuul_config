@@ -56,7 +56,7 @@
       - zuul: opendev.org/zuul/zuul-jobs
     timeout: 1800
     post-timeout: 1800
-    nodeset: debian-testing
+    nodeset: debian-stretch
 
 # See the procedure described above "base" before making changes to
 # this job.
@@ -75,4 +75,4 @@
       - zuul: opendev.org/zuul/zuul-jobs
     timeout: 1800
     post-timeout: 1800
-    nodeset: debian-testing
+    nodeset: debian-stretch

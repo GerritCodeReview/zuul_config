@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "067f5f14_20f389d8",
+        "filename": "zuul.d/jobs.yaml",
+        "patchSetId": 1
+      },
+      "lineNbr": 69,
+      "author": {
+        "id": 1011123
+      },
+      "writtenOn": "2020-03-26T08:11:29Z",
+      "side": 1,
+      "message": "Is it intentional that when this is rendered on the UI [1] the description is cut off at the first line break?\n\n[1] https://ci.gerritcodereview.com/t/gerrit/jobs",
+      "range": {
+        "startLine": 68,
+        "startChar": 6,
+        "endLine": 69,
+        "endChar": 51
+      },
+      "revId": "ca8e033d03f9de95e14264cf14effc79934bddb5",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    }
+  ]
+}

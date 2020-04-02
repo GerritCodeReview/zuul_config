@@ -10,64 +10,64 @@
     name: plugins/codemirror-editor
     check:
       jobs:
-        - gerrit-build
+        - gerrit-plugin-build
 
 - project:
     name: plugins/commit-message-length-validator
     check:
       jobs:
-        - gerrit-build
+        - gerrit-plugin-build
 
 - project:
     name: plugins/delete-project
     check:
       jobs:
-        - gerrit-build
+        - gerrit-plugin-build
 
 - project:
     name: plugins/download-commands
     check:
       jobs:
-        - gerrit-build
+        - gerrit-plugin-build
 
 - project:
     name: plugins/gitiles
     check:
       jobs:
-        - gerrit-build
+        - gerrit-plugin-build
 
 - project:
     name: plugins/hooks
     check:
       jobs:
-        - gerrit-build
+        - gerrit-plugin-build
 
 - project:
     name: plugins/plugin-manager
     check:
       jobs:
-        - gerrit-build
+        - gerrit-plugin-build
 
 - project:
     name: plugins/replication
     check:
       jobs:
-        - gerrit-build
+        - gerrit-plugin-build
 
 - project:
     name: plugins/reviewnotes
     check:
       jobs:
-        - gerrit-build
+        - gerrit-plugin-build
 
 - project:
     name: plugins/singleusergroup
     check:
       jobs:
-        - gerrit-build
+        - gerrit-plugin-build
 
 - project:
     name: plugins/webhooks
     check:
       jobs:
-        - gerrit-build
+        - gerrit-plugin-build

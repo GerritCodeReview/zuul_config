@@ -28,7 +28,9 @@
     name: plugins/download-commands
     check:
       jobs:
-        - gerrit-plugin-build
+        - gerrit-plugin-build:
+            vars:
+              bazelisk_test_targets: ""
 
 - project:
     name: plugins/gitiles

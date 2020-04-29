@@ -46,7 +46,9 @@
     name: plugins/plugin-manager
     check:
       jobs:
-        - gerrit-plugin-build
+        - gerrit-plugin-build:
+            required-projects:
+              - plugins/codemirror-editor
 
 - project:
     name: plugins/replication

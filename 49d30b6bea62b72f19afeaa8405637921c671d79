@@ -57,6 +57,24 @@
       "revId": "49d30b6bea62b72f19afeaa8405637921c671d79",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "2dc495c5_c699b9a7",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 1006192
+      },
+      "writtenOn": "2020-04-29T20:04:12Z",
+      "side": 1,
+      "message": "\u003e Say, we would add another 100 plugins as core plugins. Only one single core plugin right now: plugin-manager requires all 100 plugins to be cloned. Is that smart to always clone 100 of plugins to verify core plugin for every core plugin in vain? Bandwidth is very valuable resources and we should avoid wasting it.\n\u003e \n\u003e I would prefer one of these alternative:\n\u003e \n\u003e * 1. Rewrite the test in plugin-manager to not require release.war to be built in\n\nYou mean not to test E2E: not an option as this is the reason why we write tests. We want to make sure that the code works E2E. That specific test was written to fix a bug discovered.\nThe CI/CD system should be flexible enough to be able to run tests, no the other way around.\n\n\u003e the first place. There is RedHat java library for creating jar and war using Java API (forgot it name), So that we could mock release.war with similar content without requiring actual real release.war to be built. It was probably a crazy idea anyway.\n\nIt was your idea :-) and I liked it. I would have not been able to do that with Bazel.\n\n\u003e *. 2 Rewrite the test to only use release.war with one single plugin: plugin-manager included in release.war. This repository is already cloned. We could add new rule to gerrit core: release_with_plugin_manager_plugin.war\n\nThen it won\u0027t be E2E anymore.",
+      "parentUuid": "335e269d_a5336339",
+      "revId": "49d30b6bea62b72f19afeaa8405637921c671d79",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
     }
   ]
 }

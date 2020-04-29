@@ -75,6 +75,24 @@
       "revId": "49d30b6bea62b72f19afeaa8405637921c671d79",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "df37499f_ea1b7a4c",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 1011323
+      },
+      "writtenOn": "2020-04-29T20:21:44Z",
+      "side": 1,
+      "message": "\u003e *. 2 Rewrite the test to only use release.war with one single plugin: plugin-manager included in release.war. This repository is already cloned. We could add new rule to gerrit core: release_with_plugin_manager_plugin.war\n\n\u003e Then it won\u0027t be E2E anymore.\n\nHow that? plugin-manager has two modes: install local plugins from  release.war and remote plugins from configured CI site. Why testing 1 plugin from release.was is not enough? Why it has to be 10 plugins or hundreds in release.war? What error would you detect, if it work with installing one plugin from release.war, compared to 100 plugins included in release.war?",
+      "parentUuid": "2dc495c5_c699b9a7",
+      "revId": "49d30b6bea62b72f19afeaa8405637921c671d79",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
     }
   ]
 }

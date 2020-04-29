@@ -46,7 +46,28 @@
     name: plugins/plugin-manager
     check:
       jobs:
-        - gerrit-plugin-build
+        - gerrit-plugin-build:
+            branches:
+              - stable-2.16
+              - stable-3.0
+              - stable-3.1
+            required-projects:
+              - plugins/codemirror-editor
+              - plugins/commit-message-length-validator
+              - plugins/download-commands
+              - plugins/hooks
+              - plugins/replication
+              - plugins/reviewnotes
+              - plugins/singleusergroup
+        - gerrit-plugin-build:
+            branches:
+              - stable-3.0
+              - stable-3.1
+            required-projects:
+              - plugins/delete-project
+              - plugins/gitiles
+              - plugins/plugin-manager
+              - plugins/webhooks
 
 - project:
     name: plugins/replication

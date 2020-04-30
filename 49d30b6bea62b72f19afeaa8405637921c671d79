@@ -111,6 +111,24 @@
       "revId": "49d30b6bea62b72f19afeaa8405637921c671d79",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3c8c02bf_745e5721",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 1011323
+      },
+      "writtenOn": "2020-04-30T10:11:38Z",
+      "side": 1,
+      "message": "I am not convinced at all. Consider Jenkins eco system with 10K plugins.\n\nNow, you write plugin \"foo\" with E2E fancy tests that clone 10K repositories to produce jenkins_with_all_plugins_shaded.war. Why not? Do it, if you can.\n\nBut now, you ask Kohsuke Kawaguchi, because your plugins so important to you and you always want e2e, he should accept in jenkins core your change, and clone for *every* plugin build all  10k repositories.",
+      "parentUuid": "a2379330_028cc39c",
+      "revId": "49d30b6bea62b72f19afeaa8405637921c671d79",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
     }
   ]
 }

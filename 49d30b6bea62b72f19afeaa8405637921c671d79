@@ -129,6 +129,23 @@
       "revId": "49d30b6bea62b72f19afeaa8405637921c671d79",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "65d958a5_236cf634",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 1087826
+      },
+      "writtenOn": "2020-05-01T14:33:44Z",
+      "side": 1,
+      "message": "I\u0027ve read the above replies.  Here are some general thoughts, and I\u0027ll follow them up with specific suggestions:\n\n* Cloning and bandwidth: yes we should minimize the number of repos that we clone to save processing and bandwidth.  However, we may decide that cloning all of the core plugins isn\u0027t such a big deal (especially compared to gerrit itself, which is always needed).  One way to mitigate this cost is to use custom images with gerrit and the core repos pre-cached.  In that case, Zuul only needs to push the delta and it\u0027s very efficient.  We don\u0027t need to decide that right now though.\n\n* Zuul\u0027s specialty is E2E testing across projects, so it\u0027s definitely in-scope to do this.  I think the only question is how and where to describe the dependency relationship between the different plugins.  I think these are our options:\n\n1) Update this change to list all of the plugins that plugin-manager needs.  This could get a little verbose because we\u0027ll need a list of plugins for each branch.  And if the list is just the list of core plugins, then we\u0027ll end up duplicating the list that\u0027s already in the gerrit repo.  I would suggest this approach for a small number of additional plugins, but since it\u0027s looking like a large number, I think we should use a different approach.\n\n2) Option #1 but put the list in the plugin-manager repo.  We would still have the same amount of duplicated configuration, but it would be easier to manage because it would be inside the plugin-manager repo itself, much like the list of required and core plugins is currently in the .zuul.yaml in the gerrit repo.  Once we set that up, if you added a new plugin for plugin-manager to use, then you could simply also add it to the job config at the same time.  When new branches are created, the config will automatically be copied from the branch point.  This also has the advantage of easily being able to add plugins other than core plugins to the build/test jobs.\n\n3) Always checkout all the core plugins for all gerrit and plugin build jobs.  This is the change at https://gerrit-review.googlesource.com/265213 .  This is the simplest way to solve the issue, but it comes at the cost of unecessary checkouts for plugin builds that don\u0027t need all the core plugins.  It also doesn\u0027t address adding non-core plugins to plugin-manager.\n\n4) Add an extra layer of hierarchy to the job structure in the gerrit repo.  Currently the core plugins are added only in the gerrit-build job.  The gerrit-plugin-build job is based on gerrit-base, which adds jgit, but not core plugins.  We could insert a new layer called \u0027gerrit-with-plugins-base\u0027 which adds the plugins and reparent gerrit-build on that.  We would leave gerrit-plugin-build parented to gerrit-base so it doesn\u0027t see the plugins, but then create a new gerrit-plugin-build-with-plugins job that inherits from the new job.  This is the most efficient solution because it only clones plugins when necessary, and it has no duplication of configuration.  But it does make the configuration harder to follow and like #3 only addresses core plugins.\n\nHere\u0027s how I would recommend making the decision:\n\n* If you may want to test plugin-manager with non-core plugins: eliminate options #3 and #4.\n* If you would prefer to waste a little bit of bandwidth/cpu for simplicity, choose #3.\n* If you want the job to be as efficient as possible at the cost of a little bit of configuration duplication, chose #2 (or possibly #4).\n* If you have gotten to this point and absolutely can\u0027t stand the thought of having a .zuul.yaml file in plugin-manager, choose #1.\n\nIf you\u0027d like to see what option #2 looks like, I\u0027d be happy to propose a WIP change to demonstrate.\n\nAfter writing all this out and thinking about it, my recommendations in order of preference would be #2, #3, #4, #1.  I think #2 is the best.",
+      "revId": "49d30b6bea62b72f19afeaa8405637921c671d79",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
     }
   ]
 }

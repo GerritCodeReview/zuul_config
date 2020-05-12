@@ -71,3 +71,11 @@
     check:
       jobs:
         - gerrit-plugin-build
+
+# Other plugins:
+
+- project:
+    name: plugins/code-owners
+    check:
+      jobs:
+        - gerrit-plugin-build

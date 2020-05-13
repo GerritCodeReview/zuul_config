@@ -92,6 +92,30 @@
       "revId": "1b8f5e98452f09857421c57de4f7b35de959f4b0",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "ebd5cc6b_35e3b15d",
+        "filename": "zuul.d/projects.yaml",
+        "patchSetId": 1
+      },
+      "lineNbr": 81,
+      "author": {
+        "id": 1006192
+      },
+      "writtenOn": "2020-05-13T11:55:21Z",
+      "side": 1,
+      "message": "I\u0027ve answered myself: I found it in another change",
+      "parentUuid": "26c2c832_3e007052",
+      "range": {
+        "startLine": 81,
+        "startChar": 10,
+        "endLine": 81,
+        "endChar": 29
+      },
+      "revId": "1b8f5e98452f09857421c57de4f7b35de959f4b0",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
     }
   ]
 }

@@ -2,6 +2,29 @@
   "comments": [
     {
       "key": {
+        "uuid": "b75cffd0_59cc62fd",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 1003935
+      },
+      "writtenOn": "2020-05-13T10:53:28Z",
+      "side": 1,
+      "message": "Please let know if this is preferred. In this case I can do the change in the plugin.",
+      "range": {
+        "startLine": 9,
+        "startChar": 57,
+        "endLine": 11,
+        "endChar": 16
+      },
+      "revId": "1b8f5e98452f09857421c57de4f7b35de959f4b0",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "26c2c832_3e007052",
         "filename": "zuul.d/projects.yaml",
         "patchSetId": 1
@@ -42,6 +65,29 @@
         "startChar": 2,
         "endLine": 81,
         "endChar": 0
+      },
+      "revId": "1b8f5e98452f09857421c57de4f7b35de959f4b0",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "160e9cbc_1a354b1e",
+        "filename": "zuul.d/projects.yaml",
+        "patchSetId": 1
+      },
+      "lineNbr": 81,
+      "author": {
+        "id": 1003935
+      },
+      "writtenOn": "2020-05-13T10:53:28Z",
+      "side": 1,
+      "message": "Is this only building the plugin, or also running plugin tests?\nNote, the plugin doesn\u0027t have any tests yet, but I will add some sooon.",
+      "range": {
+        "startLine": 81,
+        "startChar": 0,
+        "endLine": 81,
+        "endChar": 29
       },
       "revId": "1b8f5e98452f09857421c57de4f7b35de959f4b0",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",

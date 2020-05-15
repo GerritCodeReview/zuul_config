@@ -60,6 +60,47 @@
     },
     {
       "key": {
+        "uuid": "26ce04f2_fbb48876",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 1006192
+      },
+      "writtenOn": "2020-05-15T10:50:31Z",
+      "side": 1,
+      "message": "SGTM as well. The problem with plugins is that at times it is quite difficult to manage the permissions to allow the CI maintainers (e.g. Thomas) to make changes to each plugin, because he is NOT maintaining the plugin itself.\n\nRelying on every plugin maintainer to manage their CI pipeline isn\u0027t practical either.\n\nI\u0027m fine in keeping this into a single repo as today, with ACLs for the CI maintainers.",
+      "parentUuid": "1802c0f9_c6b3b8b3",
+      "revId": "1b8f5e98452f09857421c57de4f7b35de959f4b0",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "191db78f_2ded9911",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 14,
+      "author": {
+        "id": 1006192
+      },
+      "writtenOn": "2020-05-15T10:50:31Z",
+      "side": 1,
+      "message": "I know this is a Zuul thing, but it would be nice if we could use topics instead of \"Depends-On\". Gerrit doesn\u0027t support Depends-On natively and therefore the two changes could still be merged individually.\n\nAdding a topic to it.",
+      "range": {
+        "startLine": 14,
+        "startChar": 0,
+        "endLine": 14,
+        "endChar": 57
+      },
+      "revId": "1b8f5e98452f09857421c57de4f7b35de959f4b0",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "26c2c832_3e007052",
         "filename": "zuul.d/projects.yaml",
         "patchSetId": 1

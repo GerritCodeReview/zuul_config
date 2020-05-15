@@ -101,6 +101,23 @@
     },
     {
       "key": {
+        "uuid": "54e6528f_d2e41be3",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1003935
+      },
+      "writtenOn": "2020-05-15T14:24:13Z",
+      "side": 1,
+      "message": "\u003e Patch Set 1:\n\u003e \n\u003e James, thanks again for helping me with the setup!!\n\u003e \n\u003e I uploaded a test change to verify the setup [1].\n\u003e Zuul picked up the change for validation, but it claims that it conflicts with the destination branch [2], which actually isn\u0027t the case. Am I missing anything?\n\u003e \n\u003e [1] https://gerrit-review.googlesource.com/c/plugins/code-owners/+/267620\n\u003e [2] https://ci.gerritcodereview.com/t/gerrit/buildset/d108972935fc4b26b0ebf17d23ba72de\n\nNot sure if you have changed anything, but the checker was running successfully now.\n\nOne more question, is it possible to make the checker required for submit? If we can make it required I would drop the Verified label for this plugin repo.",
+      "revId": "1b8f5e98452f09857421c57de4f7b35de959f4b0",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "26c2c832_3e007052",
         "filename": "zuul.d/projects.yaml",
         "patchSetId": 1

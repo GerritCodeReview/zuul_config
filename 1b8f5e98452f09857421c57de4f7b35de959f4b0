@@ -42,6 +42,24 @@
     },
     {
       "key": {
+        "uuid": "1802c0f9_c6b3b8b3",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 1003935
+      },
+      "writtenOn": "2020-05-15T06:46:13Z",
+      "side": 1,
+      "message": "Thanks for explaining. Then let\u0027s keep it here for now. We can always reconsider later.",
+      "parentUuid": "b0bc4891_0482d2ab",
+      "revId": "1b8f5e98452f09857421c57de4f7b35de959f4b0",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "26c2c832_3e007052",
         "filename": "zuul.d/projects.yaml",
         "patchSetId": 1
@@ -147,6 +165,24 @@
       "writtenOn": "2020-05-14T14:25:09Z",
       "side": 1,
       "message": "Luca, see the \"Depends-On\" change in the commit message, that\u0027s the change that will let Zuul know about the new project.  Unfortunately, that sort of change is one where we update the config file for the system and reload it, so it\u0027s not one that Zuul can dynamically evaluate.  We\u0027ll have to merge it first before this one will succeed.\n\nThe checker maps to the Zuul pipeline (defined in zuul.d/pipelines.yaml in this repo).  Once we add the checker for that pipeline, we can add as many jobs as we want to the pipeline (this mapping is why I think subchecks is important: checker-\u003epipeline; subcheck-\u003ejob).\n\nEdwin, the gerrit-plugin-build job should run the build always and also tests iff tests are defined.",
+      "revId": "1b8f5e98452f09857421c57de4f7b35de959f4b0",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "611342c9_1ce9c4b3",
+        "filename": "zuul.d/projects.yaml",
+        "patchSetId": 1
+      },
+      "lineNbr": 81,
+      "author": {
+        "id": 1003935
+      },
+      "writtenOn": "2020-05-15T06:46:13Z",
+      "side": 1,
+      "message": "\u003e Edwin, the gerrit-plugin-build job should run the build always and also tests iff tests are defined.\n\nCool. I was just wondering whether the job would fail if it\u0027s trying to run tests but there are no tests there yet.",
+      "parentUuid": "34a0566d_1e78857f",
       "revId": "1b8f5e98452f09857421c57de4f7b35de959f4b0",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
       "unresolved": false

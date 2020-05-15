@@ -135,6 +135,23 @@
     },
     {
       "key": {
+        "uuid": "b1d809fb_3e8639a2",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1003935
+      },
+      "writtenOn": "2020-05-15T14:58:35Z",
+      "side": 1,
+      "message": "\u003e Patch Set 1:\n\u003e \n\u003e Cool, then if you\u0027re up for it, let\u0027s have Zuul start reporting Verified, and then after that, remove Verified from code-owners and see if that breaks (repos with and without verified labels will be new to Zuul I think).  :)\n\nSGTM! Let\u0027s try this.\nHere is the change that removes the \u0027Verified\u0027 label [1] from the plugin repo. Please feel free to submit it when the testing with the Verified voting has been done.\n\nSo one problem we can see already now is that the checker fails for changes that update the refs/meta/config branch such as [1], but it\u0027s not a blocker for me.\n\n[1] https://gerrit-review.googlesource.com/c/plugins/code-owners/+/267743",
+      "revId": "1b8f5e98452f09857421c57de4f7b35de959f4b0",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "26c2c832_3e007052",
         "filename": "zuul.d/projects.yaml",
         "patchSetId": 1

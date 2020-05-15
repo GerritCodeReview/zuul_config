@@ -118,6 +118,23 @@
     },
     {
       "key": {
+        "uuid": "7b4d0133_ae6f7601",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1003935
+      },
+      "writtenOn": "2020-05-15T14:43:35Z",
+      "side": 1,
+      "message": "\n\u003e Replied on the other change (sorry I was in the middle of combing through logs); in short, it looks like a transient git fetch error.\n\nThanks for checking :)\n\n\u003e I think we can make the checker required for submit, though we were also talking about having\n\u003e Zuul report Verified, since there are still some benefits to that (showing up in the dashboard\n\u003e view, and updating the last updated time for the change).  I was about to push up a change for that; \n\nThat would work for me too.\n\n\u003e if Zuul were reporting Verified, would you still want to drop it for code-owners?\n\nYes, I would still prefer dropping the Verified label and rely on the checker only. This is what we had in mind for the long run for how checks should be used, and maybe now with this plugin it\u0027s a chance to try this out and see how good it works.\n",
+      "revId": "1b8f5e98452f09857421c57de4f7b35de959f4b0",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "26c2c832_3e007052",
         "filename": "zuul.d/projects.yaml",
         "patchSetId": 1

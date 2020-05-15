@@ -227,6 +227,30 @@
       "revId": "1b8f5e98452f09857421c57de4f7b35de959f4b0",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "fbe75ac2_afbf0119",
+        "filename": "zuul.d/projects.yaml",
+        "patchSetId": 1
+      },
+      "lineNbr": 81,
+      "author": {
+        "id": 1006192
+      },
+      "writtenOn": "2020-05-15T11:26:57Z",
+      "side": 1,
+      "message": "I answered myself: it was on the dependent change. I assumed Zuul saw the Depends-On and would have validated this change with that dependency in mind.",
+      "parentUuid": "ba030473_143b7e08",
+      "range": {
+        "startLine": 77,
+        "startChar": 2,
+        "endLine": 81,
+        "endChar": 0
+      },
+      "revId": "1b8f5e98452f09857421c57de4f7b35de959f4b0",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
     }
   ]
 }

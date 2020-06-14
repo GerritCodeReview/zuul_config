@@ -2,4 +2,10 @@
     name: debian-stretch
     nodes:
       - name: testnode
-        label: debian-stretch-8G
+        label: debian-stretch-e2-standard-8
+
+- nodeset:
+    name: debian-stretch-large
+    nodes:
+      - name: testnode
+        label: debian-stretch-e2-standard-16

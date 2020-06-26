@@ -16,6 +16,23 @@
       "revId": "8c1bec3b00d59d722a9b942f0974b5b2759bdcad",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "873843b0_b88e8eaa",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1014252
+      },
+      "writtenOn": "2020-06-26T09:00:34Z",
+      "side": 1,
+      "message": "Where are the branches, for which this build should be run, specified?",
+      "revId": "8c1bec3b00d59d722a9b942f0974b5b2759bdcad",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
     }
   ]
 }

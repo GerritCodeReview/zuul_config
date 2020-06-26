@@ -33,6 +33,24 @@
       "revId": "8c1bec3b00d59d722a9b942f0974b5b2759bdcad",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "369fa90c_8cd1eaf9",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1011323
+      },
+      "writtenOn": "2020-06-26T09:07:54Z",
+      "side": 1,
+      "message": "Checker configuration? You saw my screenshot in issue 13007? There is no restriction in the query for checks plugins checker definition. All branches must be verified.",
+      "parentUuid": "873843b0_b88e8eaa",
+      "revId": "8c1bec3b00d59d722a9b942f0974b5b2759bdcad",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
     }
   ]
 }

@@ -91,3 +91,9 @@
     check:
       jobs:
         - gerrit-plugin-build
+
+- project:
+    name: plugins/reviewers
+    check:
+      jobs:
+        - gerrit-plugin-build

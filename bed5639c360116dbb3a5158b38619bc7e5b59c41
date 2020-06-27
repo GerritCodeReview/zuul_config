@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "780ef1f4_3b2a792a",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1011323
+      },
+      "writtenOn": "2020-06-27T05:01:36Z",
+      "side": 1,
+      "message": "Verification is failing, even though the Depends-On: footer was added:\n\n  The project \"plugins/oauth\" was not found.\n  The error appears in the following project stanza:\n      project: name: plugins/oauth\n      check: jobs: - gerrit-plugin-build\n      in \"zuul/config/zuul.d/projects.yaml@master\", line 89, column 3",
+      "revId": "bed5639c360116dbb3a5158b38619bc7e5b59c41",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    }
+  ]
+}

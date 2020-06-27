@@ -146,6 +146,24 @@
       "revId": "49d30b6bea62b72f19afeaa8405637921c671d79",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "d19be58d_02c21031",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 1011323
+      },
+      "writtenOn": "2020-06-27T04:33:20Z",
+      "side": 1,
+      "message": "\u003e After writing all this out and thinking about it, my recommendations in order of preference would be #2, #3, #4, #1.  I think #2 is the best.\n\nThanks, James for the detailed explanation and the list of all possibilities.\nI agree that #2 is the way to go.",
+      "parentUuid": "65d958a5_236cf634",
+      "revId": "49d30b6bea62b72f19afeaa8405637921c671d79",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
     }
   ]
 }

@@ -85,3 +85,9 @@
     check:
       jobs:
         - gerrit-plugin-build
+
+- project:
+    name: plugins/oauth
+    check:
+      jobs:
+        - gerrit-plugin-build

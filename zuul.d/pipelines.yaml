@@ -34,8 +34,7 @@
       sql:
       gerrit:
         comment: False
-        gerrit:
-          Verified: 1
+        Verified: 1
         checks-api:
           scheme: 'zuul-check'
           state: SUCCESSFUL
@@ -44,8 +43,7 @@
       sql:
       gerrit:
         comment: False
-        gerrit:
-          Verified: -1
+        Verified: -1
         checks-api:
           scheme: 'zuul-check'
           state: FAILED

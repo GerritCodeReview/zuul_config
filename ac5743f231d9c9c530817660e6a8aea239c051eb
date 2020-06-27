@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "0c062444_1ff3488e",
+        "filename": "zuul.d/projects.yaml",
+        "patchSetId": 6
+      },
+      "lineNbr": 70,
+      "author": {
+        "id": 1011323
+      },
+      "writtenOn": "2020-06-27T04:38:28Z",
+      "side": 1,
+      "message": "Why this section is duplicated and the same branches are listed again: stable-3.0 and stable-3.1.\n\nAlso should we add here now stable-3.2 branch?",
+      "range": {
+        "startLine": 62,
+        "startChar": 8,
+        "endLine": 70,
+        "endChar": 32
+      },
+      "revId": "ac5743f231d9c9c530817660e6a8aea239c051eb",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    }
+  ]
+}

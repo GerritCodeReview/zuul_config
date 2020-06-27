@@ -16,6 +16,24 @@
       "revId": "bed5639c360116dbb3a5158b38619bc7e5b59c41",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "0022ed98_2e0a7a6f",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1087826
+      },
+      "writtenOn": "2020-06-27T13:35:23Z",
+      "side": 1,
+      "message": "Yes, this is one of the cases where we have to wait for the first patch to merge and be deployed before this one will work.  I still like to add Depends-On footers to help reviewers.",
+      "parentUuid": "780ef1f4_3b2a792a",
+      "revId": "bed5639c360116dbb3a5158b38619bc7e5b59c41",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
     }
   ]
 }

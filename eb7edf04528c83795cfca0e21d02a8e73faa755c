@@ -22,6 +22,30 @@
       "revId": "eb7edf04528c83795cfca0e21d02a8e73faa755c",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "5f63353e_eadd7d88",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 1011323
+      },
+      "writtenOn": "2020-06-28T04:50:54Z",
+      "side": 1,
+      "message": "Opps.",
+      "parentUuid": "7beb884c_2f4ea3b5",
+      "range": {
+        "startLine": 9,
+        "startChar": 14,
+        "endLine": 9,
+        "endChar": 19
+      },
+      "revId": "eb7edf04528c83795cfca0e21d02a8e73faa755c",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
     }
   ]
 }

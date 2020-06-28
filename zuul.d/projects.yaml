@@ -103,3 +103,9 @@
     check:
       jobs:
         - gerrit-plugin-build
+
+- project:
+    name: plugins/saml
+    check:
+      jobs:
+        - gerrit-plugin-build

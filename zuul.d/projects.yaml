@@ -99,6 +99,12 @@
         - gerrit-plugin-build
 
 - project:
+    name: plugins/project-group-structure
+    check:
+      jobs:
+        - gerrit-plugin-build
+
+- project:
     name: plugins/reviewers
     check:
       jobs:

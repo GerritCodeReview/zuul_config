@@ -75,6 +75,12 @@
 # Other plugins:
 
 - project:
+    name: plugins/admin-console
+    check:
+      jobs:
+        - gerrit-plugin-build
+
+- project:
     name: plugins/checks
     check:
       jobs:

@@ -207,6 +207,12 @@
         - gerrit-plugin-build
 
 - project:
+    name: plugins/metrics-reporter-graphite
+    check:
+      jobs:
+        - gerrit-plugin-build
+
+- project:
     name: plugins/metrics-reporter-prometheus
     check:
       jobs:

@@ -205,3 +205,9 @@
     check:
       jobs:
         - gerrit-plugin-build
+
+- project:
+    name: plugins/serviceuser
+    check:
+      jobs:
+        - gerrit-plugin-build

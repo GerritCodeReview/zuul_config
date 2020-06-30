@@ -87,6 +87,12 @@
         - gerrit-plugin-build
 
 - project:
+    name: plugins/changemessage
+    check:
+      jobs:
+        - gerrit-plugin-build
+
+- project:
     name: plugins/checks
     check:
       jobs:

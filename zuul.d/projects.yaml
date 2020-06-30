@@ -111,6 +111,12 @@
         - gerrit-plugin-build
 
 - project:
+    name: plugins/gc-conductor
+    check:
+      jobs:
+        - gerrit-plugin-build
+
+- project:
     name: plugins/lfs
     check:
       jobs:

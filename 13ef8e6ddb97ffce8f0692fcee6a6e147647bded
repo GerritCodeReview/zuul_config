@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "d5d01387_59eac41c",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1087826
+      },
+      "writtenOn": "2020-06-30T02:58:50Z",
+      "side": 1,
+      "message": "Looks good, but we should re-run after 273732 merges and Zuul will verify.\n\nFYI (in case you haven\u0027t run across this yet), you can see the result of the deployment jobs here (in order to confirm a successful run or diagnose an error):\n\nhttps://ci.gerritcodereview.com/t/gerrit/builds?job_name\u003ddeploy-zuul\u0026project\u003dzuul/ops\n",
+      "revId": "13ef8e6ddb97ffce8f0692fcee6a6e147647bded",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    }
+  ]
+}

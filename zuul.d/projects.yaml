@@ -183,6 +183,12 @@
         - gerrit-plugin-build
 
 - project:
+    name: plugins/readonly
+    check:
+      jobs:
+        - gerrit-plugin-build
+
+- project:
     name: plugins/reviewers
     check:
       jobs:

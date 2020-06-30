@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "b2f3f8fc_f7672694",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1011323
+      },
+      "writtenOn": "2020-06-30T06:14:41Z",
+      "side": 1,
+      "message": "Is this the failure related:\n\n  result\tCONFIG_ERROR\n  message\tThis change depends on a change with an invalid configuration.",
+      "revId": "f379816f9be0be67afd603a2d78dffac2743a0b9",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    }
+  ]
+}

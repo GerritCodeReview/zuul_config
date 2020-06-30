@@ -81,6 +81,12 @@
         - gerrit-plugin-build
 
 - project:
+    name: plugins/avatars-external
+    check:
+      jobs:
+        - gerrit-plugin-build
+
+- project:
     name: plugins/batch
     check:
       jobs:

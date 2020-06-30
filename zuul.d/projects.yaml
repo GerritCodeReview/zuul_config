@@ -255,6 +255,12 @@
         - gerrit-plugin-build
 
 - project:
+    name: plugins/ref-protection
+    check:
+      jobs:
+        - gerrit-plugin-build
+
+- project:
     name: plugins/rename-project
     check:
       jobs:

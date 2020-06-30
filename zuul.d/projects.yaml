@@ -223,3 +223,9 @@
     check:
       jobs:
         - gerrit-plugin-build
+
+- project:
+    name: plugins/uploadvalidator
+    check:
+      jobs:
+        - gerrit-plugin-build

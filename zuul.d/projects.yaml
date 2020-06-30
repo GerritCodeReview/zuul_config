@@ -117,6 +117,12 @@
         - gerrit-plugin-build
 
 - project:
+    name: plugins/go-import
+    check:
+      jobs:
+        - gerrit-plugin-build
+
+- project:
     name: plugins/lfs
     check:
       jobs:

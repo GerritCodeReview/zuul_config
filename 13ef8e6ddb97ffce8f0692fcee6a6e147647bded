@@ -2,6 +2,23 @@
   "comments": [
     {
       "key": {
+        "uuid": "4b685c77_6ae393a6",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 1011323
+      },
+      "writtenOn": "2020-06-30T04:44:42Z",
+      "side": 1,
+      "message": "The footers order doesn\u0027t matter, but do we have any preference/recommendation to make them consistent? Change-Id should be the last line?",
+      "revId": "13ef8e6ddb97ffce8f0692fcee6a6e147647bded",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "d5d01387_59eac41c",
         "filename": "/PATCHSET_LEVEL",
         "patchSetId": 1
@@ -31,6 +48,24 @@
       "side": 1,
       "message": "The other one was submitted, so I\u0027ve retriggered the check, which now succeeded.",
       "parentUuid": "d5d01387_59eac41c",
+      "revId": "13ef8e6ddb97ffce8f0692fcee6a6e147647bded",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "c0953646_85ae293d",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1011323
+      },
+      "writtenOn": "2020-06-30T04:44:42Z",
+      "side": 1,
+      "message": "\u003e https://ci.gerritcodereview.com/t/gerrit/builds?job_name\u003ddeploy-zuul\u0026project\u003dzuul/ops\n\nThanks for the link. Where could we document all those links? Also the way to log in to GCE and check the log. For example to track down the failed voting on Verify label we had to check the logs directly in kubernetes. May be just zuul-config in README.md?",
+      "parentUuid": "58b9e0c0_c42578a1",
       "revId": "13ef8e6ddb97ffce8f0692fcee6a6e147647bded",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
       "unresolved": false

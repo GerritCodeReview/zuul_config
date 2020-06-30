@@ -237,6 +237,12 @@
         - gerrit-plugin-build
 
 - project:
+    name: plugins/rabbitmq
+    check:
+      jobs:
+        - gerrit-plugin-build
+
+- project:
     name: plugins/rate-limiter
     check:
       jobs:

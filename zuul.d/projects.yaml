@@ -129,6 +129,12 @@
         - gerrit-plugin-build
 
 - project:
+    name: plugins/high-availability
+    check:
+      jobs:
+        - gerrit-plugin-build
+
+- project:
     name: plugins/lfs
     check:
       jobs:

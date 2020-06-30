@@ -99,6 +99,12 @@
         - gerrit-plugin-build
 
 - project:
+    name: plugins/branch-network
+    check:
+      jobs:
+        - gerrit-plugin-build
+
+- project:
     name: plugins/changemessage
     check:
       jobs:

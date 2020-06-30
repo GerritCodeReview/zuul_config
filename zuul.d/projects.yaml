@@ -189,6 +189,12 @@
         - gerrit-plugin-build
 
 - project:
+    name: plugins/rename-project
+    check:
+      jobs:
+        - gerrit-plugin-build
+
+- project:
     name: plugins/reviewers
     check:
       jobs:

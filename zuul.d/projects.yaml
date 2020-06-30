@@ -177,6 +177,12 @@
         - gerrit-plugin-build
 
 - project:
+    name: plugins/rate-limiter
+    check:
+      jobs:
+        - gerrit-plugin-build
+
+- project:
     name: plugins/reviewers
     check:
       jobs:

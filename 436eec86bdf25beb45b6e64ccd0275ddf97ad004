@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "0e08fc90_a836bf7a",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1011123
+      },
+      "writtenOn": "2020-06-30T07:06:27Z",
+      "side": 1,
+      "message": "Are you going to push corresponding changes to add the necessary config in zuul/ops?\n",
+      "revId": "436eec86bdf25beb45b6e64ccd0275ddf97ad004",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    }
+  ]
+}

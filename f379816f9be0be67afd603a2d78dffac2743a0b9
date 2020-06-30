@@ -16,6 +16,24 @@
       "revId": "f379816f9be0be67afd603a2d78dffac2743a0b9",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3b13c458_557c77af",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1011123
+      },
+      "writtenOn": "2020-06-30T06:32:26Z",
+      "side": 1,
+      "message": "Seems to have been a transient error. It\u0027s passed after I retriggered it.",
+      "parentUuid": "b2f3f8fc_f7672694",
+      "revId": "f379816f9be0be67afd603a2d78dffac2743a0b9",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
     }
   ]
 }

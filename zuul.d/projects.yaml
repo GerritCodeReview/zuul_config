@@ -211,3 +211,9 @@
     check:
       jobs:
         - gerrit-plugin-build
+
+- project:
+    name: plugins/slack-integration
+    check:
+      jobs:
+        - gerrit-plugin-build

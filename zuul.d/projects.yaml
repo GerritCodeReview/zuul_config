@@ -201,6 +201,12 @@
         - gerrit-plugin-build
 
 - project:
+    name: plugins/metrics-reporter-cloudwatch
+    check:
+      jobs:
+        - gerrit-plugin-build
+
+- project:
     name: plugins/metrics-reporter-jmx
     check:
       jobs:

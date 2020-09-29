@@ -75,12 +75,6 @@
 # Other plugins:
 
 - project:
-    name: modules/cache-chroniclemap
-    check:
-      jobs:
-        - gerrit-plugin-build
-
-- project:
     name: plugins/admin-console
     check:
       jobs:

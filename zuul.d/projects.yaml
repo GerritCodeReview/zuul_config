@@ -301,3 +301,9 @@
     check:
       jobs:
         - gerrit-plugin-build
+
+- project:
+    name: plugins/zuul
+    check:
+      jobs:
+        - gerrit-plugin-build

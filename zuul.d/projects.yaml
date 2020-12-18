@@ -307,3 +307,9 @@
     check:
       jobs:
         - gerrit-plugin-build
+
+- project:
+    name: plugins/zuul-results-summary
+    check:
+      jobs:
+        - gerrit-plugin-build

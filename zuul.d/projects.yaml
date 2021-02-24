@@ -279,6 +279,12 @@
         - gerrit-plugin-build
 
 - project:
+    name: plugins/server-config
+    check:
+      jobs:
+        - gerrit-plugin-build
+
+- project:
     name: plugins/serviceuser
     check:
       jobs:

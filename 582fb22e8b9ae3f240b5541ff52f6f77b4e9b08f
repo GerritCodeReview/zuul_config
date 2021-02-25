@@ -34,6 +34,24 @@
       "parentUuid": "978f2031_5e0bc1d3",
       "revId": "582fb22e8b9ae3f240b5541ff52f6f77b4e9b08f",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "6d84a21d_a383cf58",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1087826
+      },
+      "writtenOn": "2021-02-25T14:50:32Z",
+      "side": 1,
+      "message": "Yep, adding new projects requires the config file in the other change to be written to disk and Zuul told to reload its configuration (one of the few changes to Zuul that isn\u0027t straight out of the git repos).  Now that it\u0027s done, I rechecked this change and Zuul is happy with it.",
+      "parentUuid": "8410aafb_8d670bb8",
+      "revId": "582fb22e8b9ae3f240b5541ff52f6f77b4e9b08f",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153"
     }
   ]
 }

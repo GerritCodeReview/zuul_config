@@ -52,6 +52,24 @@
       "parentUuid": "8410aafb_8d670bb8",
       "revId": "582fb22e8b9ae3f240b5541ff52f6f77b4e9b08f",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "3465b0c0_41a36edb",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1087826
+      },
+      "writtenOn": "2021-02-25T14:59:02Z",
+      "side": 1,
+      "message": "Just FYI if you\u0027re curious, here\u0027s the job where Zuul updated its own configuration with that change: https://ci.gerritcodereview.com/t/gerrit/build/347fac97feec465982ce69448a63ca58/console\n\nYou can find jobs like that in the \"Builds\" tab of the UI (since I don\u0027t think we have that reporting back to Gerrit).  That\u0027s an easy way to confirm it ran successfully.",
+      "parentUuid": "6d84a21d_a383cf58",
+      "revId": "582fb22e8b9ae3f240b5541ff52f6f77b4e9b08f",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153"
     }
   ]
 }

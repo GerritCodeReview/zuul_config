@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "978f2031_5e0bc1d3",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1006192
+      },
+      "writtenOn": "2021-02-25T00:16:11Z",
+      "side": 1,
+      "message": "I guess we have to wait for Change-Id: I86d4613f1 to be merged?",
+      "revId": "582fb22e8b9ae3f240b5541ff52f6f77b4e9b08f",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153"
+    }
+  ]
+}

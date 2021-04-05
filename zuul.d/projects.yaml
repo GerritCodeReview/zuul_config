@@ -93,6 +93,12 @@
         - gerrit-plugin-build
 
 - project:
+    name: plugins/avatars-gravatar
+    check:
+      jobs:
+        - gerrit-plugin-build
+
+- project:
     name: plugins/batch
     check:
       jobs:

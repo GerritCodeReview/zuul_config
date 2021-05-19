@@ -51,6 +51,24 @@
       "message": "Okay, I think I know what happened: Zuul reloads its configuration when it sees a .zuul.yaml change proposed or merge (this is why 2.16 worked as expected).  But it doesn\u0027t see the .zuul.yaml change in merge commits, so it didn\u0027t notice the merge-ups to the other branches.\n\nTo fix the immediate problem, I have forced a full-reconfiguration, and it now sees the configuration on every branch.  I also re-ran the checks for the 2 open plugins/task changes; they\u0027re running now, you should see results soon.\n\nIf you make any changes to .zuul.yaml via merge commits this will happen again; I\u0027ll work on a change to Zuul to handle this case.\n\nI think we can abandon this change.\n",
       "revId": "3e85583ef477fe0d5bdbdc152291bb93c6147df1",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "d87be262_6881dd3c",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1002666
+      },
+      "writtenOn": "2021-05-19T17:47:55Z",
+      "side": 1,
+      "message": "Thanks for the explanation. As a future workaround, if I pushed a pretend change to a branch after I merged a .zuul.config to it, would that work to reload the config?",
+      "parentUuid": "cac53c7b_fd8542ba",
+      "revId": "3e85583ef477fe0d5bdbdc152291bb93c6147df1",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153"
     }
   ]
 }

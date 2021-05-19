@@ -16,6 +16,24 @@
       "message": "Hrm, give me a minute to look at this; it should behave the way you expect.",
       "revId": "3e85583ef477fe0d5bdbdc152291bb93c6147df1",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "39ca74ab_e6b4a115",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1002666
+      },
+      "writtenOn": "2021-05-19T17:06:47Z",
+      "side": 1,
+      "message": "Thank you!",
+      "parentUuid": "1873341a_94fd4a42",
+      "revId": "3e85583ef477fe0d5bdbdc152291bb93c6147df1",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153"
     }
   ]
 }

@@ -74,248 +74,181 @@
 
 # Other plugins:
 
-- project:
-    name: plugins/admin-console
+- project-template:
+    name: non-core-plugin
+    description: |
+      Build the plugin in check, and also build and publish it after
+      every merged commit.
     check:
       jobs:
         - gerrit-plugin-build
+    post:
+      jobs:
+        - gerrit-plugin-build
+        - gerrit-plugin-publish:
+            dependencies:
+              - gerrit-plugin-build
+
+- project:
+    name: plugins/admin-console
+    templates: non-core-plugin
 
 - project:
     name: plugins/autosubmitter
-    check:
-      jobs:
-        - gerrit-plugin-build
+    templates: non-core-plugin
 
 - project:
     name: plugins/avatars-external
-    check:
-      jobs:
-        - gerrit-plugin-build
+    templates: non-core-plugin
 
 - project:
     name: plugins/avatars-gravatar
-    check:
-      jobs:
-        - gerrit-plugin-build
+    templates: non-core-plugin
 
 - project:
     name: plugins/batch
-    check:
-      jobs:
-        - gerrit-plugin-build
+    templates: non-core-plugin
 
 - project:
     name: plugins/branch-network
-    check:
-      jobs:
-        - gerrit-plugin-build
+    templates: non-core-plugin
 
 - project:
     name: plugins/changemessage
-    check:
-      jobs:
-        - gerrit-plugin-build
+    templates: non-core-plugin
 
 - project:
     name: plugins/checks
-    check:
-      jobs:
-        - gerrit-plugin-build
+    templates: non-core-plugin
 
 - project:
     name: plugins/code-owners
-    check:
-      jobs:
-        - gerrit-plugin-build
+    templates: non-core-plugin
 
 - project:
     name: plugins/events-log
-    check:
-      jobs:
-        - gerrit-plugin-build
+    templates: non-core-plugin
 
 - project:
     name: plugins/gc-conductor
-    check:
-      jobs:
-        - gerrit-plugin-build
+    templates: non-core-plugin
 
 - project:
     name: plugins/go-import
-    check:
-      jobs:
-        - gerrit-plugin-build
+    templates: non-core-plugin
 
 - project:
     name: plugins/healthcheck
-    check:
-      jobs:
-        - gerrit-plugin-build
+    templates: non-core-plugin
 
 - project:
     name: plugins/heartbeat
-    check:
-      jobs:
-        - gerrit-plugin-build
+    templates: non-core-plugin
 
 - project:
     name: plugins/imagare
-    check:
-      jobs:
-        - gerrit-plugin-build
+    templates: non-core-plugin
 
 - project:
     name: plugins/its-base
-    check:
-      jobs:
-        - gerrit-plugin-build
+    templates: non-core-plugin
 
 - project:
     name: plugins/javamelody
-    check:
-      jobs:
-        - gerrit-plugin-build
+    templates: non-core-plugin
 
 - project:
     name: plugins/lfs
-    check:
-      jobs:
-        - gerrit-plugin-build
+    templates: non-core-plugin
 
 - project:
     name: plugins/log-level
-    check:
-      jobs:
-        - gerrit-plugin-build
+    templates: non-core-plugin
 
 - project:
     name: plugins/menuextender
-    check:
-      jobs:
-        - gerrit-plugin-build
+    templates: non-core-plugin
 
 - project:
     name: plugins/messageoftheday
-    check:
-      jobs:
-        - gerrit-plugin-build
+    templates: non-core-plugin
 
 - project:
     name: plugins/metrics-reporter-cloudwatch
-    check:
-      jobs:
-        - gerrit-plugin-build
+    templates: non-core-plugin
 
 - project:
     name: plugins/metrics-reporter-jmx
-    check:
-      jobs:
-        - gerrit-plugin-build
+    templates: non-core-plugin
 
 - project:
     name: plugins/metrics-reporter-graphite
-    check:
-      jobs:
-        - gerrit-plugin-build
+    templates: non-core-plugin
 
 - project:
     name: plugins/metrics-reporter-prometheus
-    check:
-      jobs:
-        - gerrit-plugin-build
+    templates: non-core-plugin
 
 - project:
     name: plugins/oauth
-    check:
-      jobs:
-        - gerrit-plugin-build
+    templates: non-core-plugin
 
 - project:
     name: plugins/project-group-structure
-    check:
-      jobs:
-        - gerrit-plugin-build
+    templates: non-core-plugin
 
 - project:
     name: plugins/quota
-    check:
-      jobs:
-        - gerrit-plugin-build
+    templates: non-core-plugin
 
 - project:
     name: plugins/rabbitmq
-    check:
-      jobs:
-        - gerrit-plugin-build
+    templates: non-core-plugin
 
 - project:
     name: plugins/rate-limiter
-    check:
-      jobs:
-        - gerrit-plugin-build
+    templates: non-core-plugin
 
 - project:
     name: plugins/readonly
-    check:
-      jobs:
-        - gerrit-plugin-build
+    templates: non-core-plugin
 
 - project:
     name: plugins/ref-protection
-    check:
-      jobs:
-        - gerrit-plugin-build
+    templates: non-core-plugin
 
 - project:
     name: plugins/rename-project
-    check:
-      jobs:
-        - gerrit-plugin-build
+    templates: non-core-plugin
 
 - project:
     name: plugins/reviewers
-    check:
-      jobs:
-        - gerrit-plugin-build
+    templates: non-core-plugin
 
 - project:
     name: plugins/saml
-    check:
-      jobs:
-        - gerrit-plugin-build
+    templates: non-core-plugin
 
 - project:
     name: plugins/server-config
-    check:
-      jobs:
-        - gerrit-plugin-build
+    templates: non-core-plugin
 
 - project:
     name: plugins/serviceuser
-    check:
-      jobs:
-        - gerrit-plugin-build
+    templates: non-core-plugin
 
 - project:
     name: plugins/slack-integration
-    check:
-      jobs:
-        - gerrit-plugin-build
+    templates: non-core-plugin
 
 - project:
     name: plugins/uploadvalidator
-    check:
-      jobs:
-        - gerrit-plugin-build
+    templates: non-core-plugin
 
 - project:
     name: plugins/zuul
-    check:
-      jobs:
-        - gerrit-plugin-build
+    templates: non-core-plugin
 
 - project:
     name: plugins/zuul-results-summary
-    check:
-      jobs:
-        - gerrit-plugin-build
+    templates: non-core-plugin

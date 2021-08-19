@@ -8,7 +8,7 @@
     # be published.  We include the current build UUID so that we
     # always get a unique path (so that the JSON file which contains
     # the sha1sum is never out of sync with the archive).
-    relative_path: "{{ zuul.project.name }}/{{ zuul.branch }}/{{ zuul.uuid }}/{{ zuul.project.short_name }}.jar"
+    relative_path: "{{ zuul.project.name }}/{{ zuul.branch }}/{{ zuul.build }}/{{ zuul.project.short_name }}.jar"
   tasks:
     - name: Make sure this is a plugin repo
       fail:
@@ -73,7 +73,7 @@
         this_plugin_version_info:
           sha1: '{{ this_artifact.metadata.sha1 }}'
           url: 'https://storage.googleapis.com/gerrit_zuul_artifacts/{{ relative_path }}'
-          build_url: 'https://ci.gerritcodereview.com/t/gerrit/build/{{ zuul.uuid }}'
+          build_url: 'https://ci.gerritcodereview.com/t/gerrit/build/{{ zuul.build }}'
     - name: Generate plugin info
       set_fact:
         my_plugin_info: "{{ {zuul.project.short_name: {'description': plugin_description, 'branches': {zuul.branch: this_plugin_version_info}}} }}"

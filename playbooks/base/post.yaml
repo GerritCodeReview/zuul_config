@@ -1,7 +1,30 @@
 - hosts: all
   roles:
     - fetch-output
-    - merge-output-to-logs
+
+- hosts: localhost
+  tasks:
+    # This is a copy of the 'merge-output-to-logs' role from
+    # zuul-jobs, but we run it in all pipelines, not just pre-merge.
+    # This is so that we can have the publish job download build
+    # plugin artifacts and promote them.  The main reason to do that
+    # as two separate jobs is so the mutex that protects the
+    # plugins.json file can be held for as brief a time as possible.
+    - name: Move artifacts and docs to logs dir
+      shell: |
+        if [ -n "$(find {{ zuul.executor.work_root }}/{{ zj_item }} -mindepth 1)" ] ; then
+        # Only create target directory if it is needed.
+        # Do not fail if it is already there.
+        mkdir -p {{ zuul.executor.log_root }}/{{ zj_item }}
+        # Leave the original directory behind so that other roles
+        # operating on the interface directories can simply no-op.
+        mv -f {{ zuul.executor.work_root }}/{{ zj_item }}/* {{ zuul.executor.log_root }}/{{ zj_item }}
+        fi
+      loop:
+        - artifacts
+        - docs
+      loop_control:
+        loop_var: zj_item
 
 - hosts: all
   # NOTE(pabelanger): We ignore_errors for the following tasks as not to fail

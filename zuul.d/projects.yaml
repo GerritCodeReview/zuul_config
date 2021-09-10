@@ -285,6 +285,68 @@
       - non-core-plugin
 
 - project:
+    name: plugins/websession-flatfile
+    check:
+      jobs:
+        - gerrit-plugin-build-master:
+            branches: master
+        - gerrit-plugin-build-stable-3.4:
+            branches: master
+        - gerrit-plugin-build-stable-3.3:
+            branches: master
+        - gerrit-plugin-build-stable-3.2:
+            branches: master
+        - gerrit-plugin-build-stable-2.16:
+            branches: master
+        - gerrit-plugin-build-stable-2.15:
+            branches: stable-2.15
+        - gerrit-plugin-build-stable-2.14:
+            branches: stable-2.14
+      post:
+        - gerrit-plugin-build-master:
+            branches: master
+        - gerrit-plugin-build-stable-3.4:
+            branches: master
+        - gerrit-plugin-build-stable-3.3:
+            branches: master
+        - gerrit-plugin-build-stable-3.2:
+            branches: master
+        - gerrit-plugin-build-stable-2.16:
+            branches: master
+        - gerrit-plugin-build-stable-2.15:
+            branches: stable-2.15
+        - gerrit-plugin-build-stable-2.14:
+            branches: stable-2.14
+        - gerrit-plugin-publish-master:
+            branches: master
+            dependencies:
+              - gerrit-plugin-build-master
+        - gerrit-plugin-publish-stable-3.4:
+            branches: master
+            dependencies:
+              - gerrit-plugin-build-stable-3.4
+        - gerrit-plugin-publish-stable-3.3:
+            branches: master
+            dependencies:
+              - gerrit-plugin-build-stable-3.3
+        - gerrit-plugin-publish-stable-3.2:
+            branches: master
+            dependencies:
+              - gerrit-plugin-build-stable-3.2
+        - gerrit-plugin-publish-stable-2.16:
+            branches: master
+            dependencies:
+              - gerrit-plugin-build-stable-2.16
+        - gerrit-plugin-publish-stable-2.15:
+            branches: stable-2.15
+            dependencies:
+              - gerrit-plugin-build-stable-2.15
+        - gerrit-plugin-publish-stable-2.14:
+            branches: stable-2.14
+            dependencies:
+              - gerrit-plugin-build-stable-2.14
+
+- project:
     name: plugins/zuul
     templates:
       - non-core-plugin

@@ -1,0 +1,138 @@
+# master
+- job:
+    name: plugins-websession-flatfile-build-master
+    parent: gerrit-blugin-build
+    branches: master
+    required-projects:
+      - name: gerrit
+        override-checkout: master
+
+- job:
+    name: plugins-websession-flatfile-publish-master
+    parent: gerrit-blugin-publish
+    branches: master
+    dependencies:
+      - plugins-websession-flatfile-build-stable-master
+
+# stable-3.4
+- job:
+    name: plugins-websession-flatfile-build-stable-3.4
+    parent: gerrit-blugin-build
+    branches: master
+    required-projects:
+      - name: gerrit
+        override-checkout: stable-3.4
+
+- job:
+    name: plugins-websession-flatfile-publish-stable-3.4
+    parent: gerrit-blugin-publish
+    branches: stable-3.4
+    dependencies:
+      - plugins-websession-flatfile-build-stable-3.4
+
+# stable-3.3
+- job:
+    name: plugins-websession-flatfile-build-stable-3.3
+    parent: gerrit-blugin-build
+    branches: master
+    required-projects:
+      - name: gerrit
+        override-checkout: stable-3.3
+
+- job:
+    name: plugins-websession-flatfile-publish-stable-3.3
+    parent: gerrit-blugin-publish
+    branches: stable-3.3
+    dependencies:
+      - plugins-websession-flatfile-build-stable-3.3
+
+# stable-3.2
+- job:
+    name: plugins-websession-flatfile-build-stable-3.2
+    parent: gerrit-blugin-build
+    branches: master
+    required-projects:
+      - name: gerrit
+        override-checkout: stable-3.2
+
+- job:
+    name: plugins-websession-flatfile-publish-stable-3.2
+    parent: gerrit-blugin-publish
+    branches: stable-3.2
+    dependencies:
+      - plugins-websession-flatfile-build-stable-3.2
+
+# stable-2.16
+- job:
+    name: plugins-websession-flatfile-build-stable-2.16
+    parent: gerrit-blugin-build
+    branches: master
+    required-projects:
+      - name: gerrit
+        override-checkout: stable-2.16
+
+- job:
+    name: plugins-websession-flatfile-publish-stable-2.16
+    parent: gerrit-blugin-publish
+    branches: stable-2.16
+    dependencies:
+      - plugins-websession-flatfile-build-stable-2.16
+
+# stable-2.15
+- job:
+    name: plugins-websession-flatfile-build-stable-2.15
+    parent: gerrit-blugin-build
+    branches: stable-2.15
+    required-projects:
+      - name: gerrit
+        override-checkout: stable-2.15
+
+- job:
+    name: plugins-websession-flatfile-publish-stable-2.15
+    parent: gerrit-blugin-publish
+    branches: stable-2.15
+    dependencies:
+      - plugins-websession-flatfile-build-stable-2.15
+
+# stable-2.14
+- job:
+    name: plugins-websession-flatfile-build-stable-2.14
+    parent: gerrit-blugin-build
+    branches: stable-2.14
+    required-projects:
+      - name: gerrit
+        override-checkout: stable-2.14
+
+- job:
+    name: plugins-websession-flatfile-publish-stable-2.14
+    parent: gerrit-blugin-publish
+    branches: stable-2.14
+    dependencies:
+      - plugins-websession-flatfile-build-stable-2.14
+
+- project:
+    check:
+      jobs:
+        - plugins-websession-flatfile-build-master
+        - plugins-websession-flatfile-build-stable-3.4
+        - plugins-websession-flatfile-build-stable-3.3
+        - plugins-websession-flatfile-build-stable-3.2
+        - plugins-websession-flatfile-build-stable-2.16
+        - plugins-websession-flatfile-build-stable-2.15
+        - plugins-websession-flatfile-build-stable-2.14
+    post:
+      jobs:
+        - plugins-websession-flatfile-build-master
+        - plugins-websession-flatfile-build-stable-3.4
+        - plugins-websession-flatfile-build-stable-3.3
+        - plugins-websession-flatfile-build-stable-3.2
+        - plugins-websession-flatfile-build-stable-2.16
+        - plugins-websession-flatfile-build-stable-2.15
+        - plugins-websession-flatfile-build-stable-2.14
+        - plugins-websession-flatfile-publish-master
+        - plugins-websession-flatfile-publish-stable-3.4
+        - plugins-websession-flatfile-publish-stable-3.3
+        - plugins-websession-flatfile-publish-stable-3.2
+        - plugins-websession-flatfile-publish-stable-2.16
+        - plugins-websession-flatfile-publish-stable-2.15
+        - plugins-websession-flatfile-publish-stable-2.14

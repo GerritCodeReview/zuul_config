@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "1cf6cfa7_39cca2e4",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1087826
+      },
+      "writtenOn": "2021-09-10T00:53:47Z",
+      "side": 1,
+      "message": "This is an alternative to the series at https://gerrit-review.googlesource.com/317651\n\nThe advantage here is that the job/branch combination is controlled centrally.  The disadvantages are that the config isn\u0027t dynamically updated, so we won\u0027t know if a new branch/job config is broken until after we added it.  The job configurations are more complex (since they have branch matchers on them instead of using the implicit branch matchers we get when configuring in-repo).\n",
+      "revId": "7a95f620595684b89291ba09f7a14822e6bf7038",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153"
+    }
+  ]
+}

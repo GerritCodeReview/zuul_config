@@ -296,9 +296,10 @@
 
 # Other projects
 
-# Attach the gitiles project to the check pipeline, but defer to
-# gitiles in-repo config for jobs.
 - project:
     name: gitiles
+    description: |
+      Build gitiles.
     check:
-      jobs: []
+      jobs:
+        - gitiles-build

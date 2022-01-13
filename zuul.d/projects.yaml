@@ -293,3 +293,13 @@
     name: plugins/zuul-results-summary
     templates:
       - non-core-plugin
+
+# Other projects
+
+- project:
+    name: gitiles
+    description: |
+      Build gitiles.
+    check:
+      jobs:
+        - gitiles-build

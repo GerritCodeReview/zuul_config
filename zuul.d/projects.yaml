@@ -293,3 +293,12 @@
     name: plugins/zuul-results-summary
     templates:
       - non-core-plugin
+
+# Other projects
+
+# Attach the gitiles project to the check pipeline, but defer to
+# gitiles in-repo config for jobs.
+- project:
+    name: gitiles
+    check:
+      jobs: []

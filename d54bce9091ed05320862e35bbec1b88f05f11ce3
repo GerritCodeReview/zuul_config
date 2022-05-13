@@ -34,6 +34,24 @@
       "parentUuid": "ae16c523_2086e39a",
       "revId": "d54bce9091ed05320862e35bbec1b88f05f11ce3",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "7c8f3715_9fddc0f6",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1011323
+      },
+      "writtenOn": "2022-05-13T07:42:18Z",
+      "side": 1,
+      "message": "The plan is to proceed with your changes. They are almost ready. I will rebase this change and upload a new patch set for another change in a moment.",
+      "parentUuid": "1a261f09_f0d3e227",
+      "revId": "d54bce9091ed05320862e35bbec1b88f05f11ce3",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153"
     }
   ],
   "submitRequirementResults": [

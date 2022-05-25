@@ -1,3 +1,17 @@
+# A shared queue definition for all Gerrit-related projects.  Allow
+# circular dependencies here so that we get intuitive behavior for
+# submit-whole-topic.
+- queue:
+    name: gerrit
+    allow-circular-dependencies: true
+
+# Make every project in our Gerrit share a merge queue.
+- project:
+    name: "^gerrit.googlesource.com/.*$"
+    queue: gerrit
+
+# We have no test jobs for this project, so run 'noop' so that we can
+# still report Zuul syntax errors, etc.
 - project:
     name: zuul/config
     check:

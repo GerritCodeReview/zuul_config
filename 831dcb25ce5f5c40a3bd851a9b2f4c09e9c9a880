@@ -1,5 +1,23 @@
 {
-  "comments": [],
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "186f4e24_6a70f03e",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1002666
+      },
+      "writtenOn": "2022-09-15T18:47:52Z",
+      "side": 1,
+      "message": "It looks like this broke the builds still relying on openjdk-8 [1]. Any idea how we can fix that?\n\n[1] https://ci.gerritcodereview.com/t/gerrit/build/2b1f4bb6d9224718a1e60d00d22c0076/console",
+      "revId": "831dcb25ce5f5c40a3bd851a9b2f4c09e9c9a880",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153"
+    }
+  ],
   "submitRequirementResults": [
     {
       "submitRequirement": {

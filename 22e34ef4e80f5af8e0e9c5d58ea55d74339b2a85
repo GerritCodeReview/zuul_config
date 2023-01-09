@@ -1,0 +1,55 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "c615ad71_3180e4ae",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1011602
+      },
+      "writtenOn": "2023-01-09T16:26:51Z",
+      "side": 1,
+      "message": "I\u0027ll push up a quick revision.",
+      "revId": "22e34ef4e80f5af8e0e9c5d58ea55d74339b2a85",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "3ec54bd0_d147e2ce",
+        "filename": "playbooks/base-test/pre.yaml",
+        "patchSetId": 1
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 1011602
+      },
+      "writtenOn": "2023-01-09T16:26:51Z",
+      "side": 1,
+      "message": "I suppose I should use true here for consistency with the other tasks.",
+      "revId": "22e34ef4e80f5af8e0e9c5d58ea55d74339b2a85",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "eaec4996_64fb589d",
+        "filename": "playbooks/base/pre.yaml",
+        "patchSetId": 1
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 1011602
+      },
+      "writtenOn": "2023-01-09T16:26:51Z",
+      "side": 1,
+      "message": "Same here.",
+      "revId": "22e34ef4e80f5af8e0e9c5d58ea55d74339b2a85",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153"
+    }
+  ]
+}

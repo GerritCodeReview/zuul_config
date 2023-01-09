@@ -5,6 +5,9 @@
 
 - hosts: all
   tasks:
+    - name: Update apt cache
+      become: yes
+      command: apt-get update
     - name: Install packages
       become: true
       package:

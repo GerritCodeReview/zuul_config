@@ -35,6 +35,24 @@
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "f40500a4_26a22259",
+        "filename": "playbooks/base-test/pre.yaml",
+        "patchSetId": 1
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 1011602
+      },
+      "writtenOn": "2023-01-09T16:30:11Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "3ec54bd0_d147e2ce",
+      "revId": "22e34ef4e80f5af8e0e9c5d58ea55d74339b2a85",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "eaec4996_64fb589d",
@@ -48,6 +66,24 @@
       "writtenOn": "2023-01-09T16:26:51Z",
       "side": 1,
       "message": "Same here.",
+      "revId": "22e34ef4e80f5af8e0e9c5d58ea55d74339b2a85",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "8269eb21_bf50ea4b",
+        "filename": "playbooks/base/pre.yaml",
+        "patchSetId": 1
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 1011602
+      },
+      "writtenOn": "2023-01-09T16:30:11Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "eaec4996_64fb589d",
       "revId": "22e34ef4e80f5af8e0e9c5d58ea55d74339b2a85",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153"
     }

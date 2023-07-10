@@ -179,6 +179,11 @@
       - non-core-plugin
 
 - project:
+    name: plugins/image-diff
+    templates:
+      - non-core-plugin
+
+- project:
     name: plugins/its-base
     templates:
       - non-core-plugin

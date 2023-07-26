@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "70841661_e5875d35",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1011602
+      },
+      "writtenOn": "2023-07-26T16:00:16Z",
+      "side": 1,
+      "message": "Looks like the config error should clear on recheck once I54be3f12f0df8891fbd4b1e909170e0f75580f1a merges.",
+      "revId": "bedc10e999e954b12ef84ccc164caf427bad1403",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153"
+    }
+  ]
+}

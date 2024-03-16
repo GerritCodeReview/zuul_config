@@ -16,6 +16,23 @@
       "message": "git clone https://gerrit.googlesource.com/zuul/config",
       "revId": "4daaac27764678eefec37074e97451e6e5ca93f6",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "fd78250e_6f47bc27",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 3347158
+      },
+      "writtenOn": "2024-03-16T23:35:48Z",
+      "side": 1,
+      "message": "252312: Initial commit | https://gerrit-review.googlesource.com/c/zuul/config/+/252312",
+      "revId": "4daaac27764678eefec37074e97451e6e5ca93f6",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153"
     }
   ]
 }

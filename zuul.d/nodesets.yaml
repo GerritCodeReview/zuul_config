@@ -1,11 +1,11 @@
 - nodeset:
-    name: debian-buster
+    name: debian-bullseye
     nodes:
       - name: testnode
-        label: debian-buster-e2-standard-8
+        label: debian-bullseye-e2-standard-8
 
 - nodeset:
-    name: debian-buster-large
+    name: debian-bullseye-large
     nodes:
       - name: testnode
-        label: debian-buster-e2-standard-16
+        label: debian-bullseye-e2-standard-16

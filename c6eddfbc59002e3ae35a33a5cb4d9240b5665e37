@@ -16,6 +16,24 @@
       "message": "We actually want these roles to run against `hosts: all` not `hosts: localhost`.",
       "revId": "c6eddfbc59002e3ae35a33a5cb4d9240b5665e37",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "2f9a2421_79426c2d",
+        "filename": "playbooks/base/pre.yaml",
+        "patchSetId": 1
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1011217
+      },
+      "writtenOn": "2024-04-19T22:09:09Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "990de013_71424172",
+      "revId": "c6eddfbc59002e3ae35a33a5cb4d9240b5665e37",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153"
     }
   ]
 }

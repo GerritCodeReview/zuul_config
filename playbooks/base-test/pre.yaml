@@ -4,6 +4,12 @@
     - log-inventory
 
 - hosts: all
+  roles:
+    - add-build-sshkey
+    - start-zuul-console
+    - ensure-output-dirs
+
+- hosts: all
   tasks:
     - name: Update apt cache
       become: true
@@ -18,7 +24,4 @@
 
 - hosts: all
   roles:
-    - add-build-sshkey
-    - start-zuul-console
-    - ensure-output-dirs
     - prepare-workspace-git

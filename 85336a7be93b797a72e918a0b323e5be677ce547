@@ -16,6 +16,24 @@
       "message": "Since this repo is a config-project and not an untrusted-project, this change would need to merge before it will take effect.\n\nIt is possible to have both a centrally defined project config as well as in-repo config.  As an alternative to this change, if you simply copy the entire image-diff project stanza as updated in this change into a .zuul.yaml (or similar) file in the image-diff repo, then the in-repo config would merge with this central config, and produce the outcome you want in a speculative environment.  Optionally, you could remove the project-config section here.\n\nAnyway, none of that is necessary -- just noting that is a path to speculative execution of config changes like this (which is worth doing if you anticipate more of them).",
       "revId": "85336a7be93b797a72e918a0b323e5be677ce547",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "9aa39098_3b168746",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1029953
+      },
+      "writtenOn": "2024-06-25T22:21:10Z",
+      "side": 1,
+      "message": "Acking this to proceed to merge this.",
+      "parentUuid": "104a74b9_497a5ff1",
+      "revId": "85336a7be93b797a72e918a0b323e5be677ce547",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153"
     }
   ]
 }

@@ -174,9 +174,6 @@
 
 - project:
     name: plugins/image-diff
-    vars:
-      bazelisk_artifacts:
-        - "bazel-bin/plugins/{{ gerrit_plugin }}/{{ gerrit_plugin }}.js"
     templates:
       - non-core-plugin
 

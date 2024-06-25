@@ -177,6 +177,7 @@
     vars:
       bazelisk_artifacts:
         - "bazel-bin/plugins/{{ gerrit_plugin }}/{{ gerrit_plugin }}.js"
+      bazelisk_test_targets: ""
     templates:
       - non-core-plugin
 

@@ -51,6 +51,23 @@
       "message": "Done this with https://gerrit-review.googlesource.com/c/plugins/image-diff/+/431519",
       "revId": "85336a7be93b797a72e918a0b323e5be677ce547",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "f1674f96_a50e1c64",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1010788
+      },
+      "writtenOn": "2024-06-27T11:58:31Z",
+      "side": 1,
+      "message": "I wonder why it did not work since I kind of wanted to have all the Zuul definitions in the same repo, or at least avoid adding an override in the `plugins/image-diff` repo.\n\nRegardless, that fixed the build ;) Thank you!",
+      "revId": "85336a7be93b797a72e918a0b323e5be677ce547",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153"
     }
   ],
   "submitRequirementResults": [

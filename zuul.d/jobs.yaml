@@ -56,7 +56,7 @@
       - zuul: opendev.org/zuul/zuul-jobs
     timeout: 1800
     post-timeout: 1800
-    nodeset: debian-bullseye
+    nodeset: debian-bookworm
 
 # See the procedure described above "base" before making changes to
 # this job.
@@ -74,7 +74,7 @@
       - zuul: opendev.org/zuul/zuul-jobs
     timeout: 1800
     post-timeout: 1800
-    nodeset: debian-bullseye
+    nodeset: debian-bookworm
 
 # A mutex (default semaphore max is 1) so that only one job at a time
 # is updating the plugins.json file.

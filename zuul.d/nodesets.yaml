@@ -1,11 +1,11 @@
 - nodeset:
-    name: debian-bullseye
+    name: debian-bookworm
     nodes:
       - name: testnode
-        label: debian-bullseye-e2-standard-8
+        label: debian-bookworm-e2-standard-8
 
 - nodeset:
-    name: debian-bullseye-large
+    name: debian-bookworm-large
     nodes:
       - name: testnode
-        label: debian-bullseye-e2-standard-16
+        label: debian-bookworm-e2-standard-16

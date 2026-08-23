@@ -311,3 +311,11 @@
     check:
       jobs:
         - gitiles-build
+
+- project:
+    name: java-prettify
+    description: |
+      Build java-prettify.
+    check:
+      jobs:
+        - java-prettify-build

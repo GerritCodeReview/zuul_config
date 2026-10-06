@@ -307,6 +307,24 @@
     templates:
       - non-core-plugin
 
+# For the main branch of this plugin only, refer to the master branch
+# of gerrit.
+- project:
+    name: plugins/zuul-results-summary
+    branches: main
+    check:
+      jobs:
+        - gerrit-plugin-build:
+            required-projects:
+              - name: gerrit
+                override-checkout: master
+    post:
+      jobs:
+        - gerrit-plugin-build:
+            required-projects:
+              - name: gerrit
+                override-checkout: master
+
 # Other projects
 
 - project:

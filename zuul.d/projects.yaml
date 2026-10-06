@@ -253,6 +253,11 @@
       - non-core-plugin
 
 - project:
+    name: plugins/ref-copy
+    templates:
+      - non-core-plugin
+
+- project:
     name: plugins/ref-protection
     templates:
       - non-core-plugin

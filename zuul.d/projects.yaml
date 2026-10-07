@@ -274,6 +274,10 @@
             required-projects:
               - name: gerrit
                 override-checkout: master
+        - gerrit-plugin-publish:
+            required-projects:
+              - name: gerrit
+                override-checkout: master
 
 - project:
     name: plugins/ref-protection
@@ -339,6 +343,10 @@
     post:
       jobs:
         - gerrit-plugin-build:
+            required-projects:
+              - name: gerrit
+                override-checkout: master
+        - gerrit-plugin-publish:
             required-projects:
               - name: gerrit
                 override-checkout: master
